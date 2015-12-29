@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="0"
+    android:measureWithLargestChild="false"
+    android:longClickable="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Salon"
+        android:id="@+id/textView"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="536dp"
+        android:layout_height="905dp"
+        android:layout_gravity="left">
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Ev"
+            android:id="@+id/Ev"
+            android:layout_weight="0.35"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Ayarlar"
+            android:id="@+id/Ayarlar"
+            android:layout_weight="0.35"
+            android:layout_alignTop="@+id/Ev"
+            android:layout_toRightOf="@+id/Ev" />
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Geçmiş"
+            android:id="@+id/Gecmis"
+            android:layout_weight="0.30"
+            android:layout_alignTop="@+id/Ayarlar"
+            android:layout_toRightOf="@+id/Ayarlar" />
+    </RelativeLayout>
+
+</LinearLayout>

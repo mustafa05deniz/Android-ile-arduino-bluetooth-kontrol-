@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:measureWithLargestChild="false"
+    android:longClickable="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Akıllı Ev projesi "
+        android:id="@+id/textView"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="367dp"
+        android:layout_height="254dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.95">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aç"
+            android:id="@+id/Ac"
+            android:layout_gravity="center_vertical"
+            android:nestedScrollingEnabled="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kapat"
+            android:id="@+id/btnOff"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Çalkala"
+            android:id="@+id/button3"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="536dp"
+        android:layout_height="693dp"
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Ev"
+            android:id="@+id/Ev"
+            android:layout_weight="0.35"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Ayarlar"
+            android:id="@+id/Ayarlar"
+            android:layout_weight="0.35"
+            android:layout_alignTop="@+id/Ev"
+            android:layout_toRightOf="@+id/Ev" />
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Geçmiş"
+            android:id="@+id/Gecmis"
+            android:layout_weight="0.30"
+            android:layout_alignTop="@+id/Ayarlar"
+            android:layout_toRightOf="@+id/Ayarlar" />
+    </RelativeLayout>
+
+</LinearLayout>
